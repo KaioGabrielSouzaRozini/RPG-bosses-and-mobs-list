@@ -2,6 +2,7 @@ package RPG_bosses_and_mobs.controller;
 
 import RPG_bosses_and_mobs.model.Boss;
 import RPG_bosses_and_mobs.service.BossService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +14,7 @@ import java.util.List;
 public class BossController {
     private final BossService bossService;
 
+    @Autowired
     public BossController(BossService bossService) {
         this.bossService = bossService;
     }
