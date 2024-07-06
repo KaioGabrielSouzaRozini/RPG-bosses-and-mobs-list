@@ -18,6 +18,10 @@ public class Boss implements Serializable {
     @Column(nullable = false, updatable = false)
     private String bossCode;
 
+    public Boss(){
+
+    }
+
     public void setBossCode(String bossCode) {
         this.bossCode = bossCode;
     }

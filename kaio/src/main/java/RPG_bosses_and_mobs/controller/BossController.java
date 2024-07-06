@@ -14,10 +14,9 @@ import java.util.List;
 public class BossController {
     private final BossService bossService;
 
-    @Autowired
     public BossController(BossService bossService) {
         this.bossService = bossService;
-    }
+    }   
 
     @GetMapping("/all")
     public ResponseEntity<List<Boss>> getAllBoss(){

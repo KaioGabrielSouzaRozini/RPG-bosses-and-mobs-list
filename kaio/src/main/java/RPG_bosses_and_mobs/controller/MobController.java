@@ -16,7 +16,6 @@ import java.util.List;
 public class MobController {
     private final MobService mobService;
 
-    @Autowired
     public MobController(MobService mobService) {
         this.mobService = mobService;
     }

@@ -16,6 +16,10 @@ public class Mob implements Serializable {
     @Column(nullable = false, updatable = false)
     private String mobCode;
 
+    public Mob(){
+
+    }
+
     public Mob(float altura, String aparencia, String mobCode, Long id, String nome, String poderes) {
         this.altura = altura;
         this.aparencia = aparencia;
